@@ -1,0 +1,1 @@
+print("Semantics is fun!")

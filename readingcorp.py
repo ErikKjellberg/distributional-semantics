@@ -24,7 +24,7 @@ def creatmaindic(flderwithdata): #the argument is the name of folder + /
             sentences = soup.find_all('sentence')
 
             #TRESHOLD ONLY 10 SENTENCES BETWEEN 10 AND 20
-            for sentence in sentences:#[10:20]:
+            for sentence in sentences[10:20]:
 
                 list_sent = []
                 for word in sentence.get_text().split("\n")[1:]:
@@ -32,5 +32,5 @@ def creatmaindic(flderwithdata): #the argument is the name of folder + /
                 maindic[numbers].append(list_sent)
     return maindic
 
-print(creatmaindic("vrt/"))
+#print(creatmaindic("vrt/"))
 
